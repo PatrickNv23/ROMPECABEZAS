@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMPECABEZAS</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- fuente Karla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <h1 class="titulo">ROMPECABEZAS CON DRAG AND DROP</h1>
+
+    <section class="contenedor_imagenes">
+        <img id="img1" draggable="true" ondragstart="onDragStar(event)" class="pieza" src="./img_recortadas/r1.png">
+        <img id="img4" draggable="true" ondragstart="onDragStar(event)" class="pieza" src="./img_recortadas/r4.png">
+        <img id="img2" draggable="true" ondragstart="onDragStar(event)" class="pieza" src="./img_recortadas/r2.png">
+        <img id="img6" draggable="true" ondragstart="onDragStar(event)" class="pieza" src="./img_recortadas/r6.png">
+        <img id="img5" draggable="true" ondragstart="onDragStar(event)" class="pieza" src="./img_recortadas/r5.png">
+        <img id="img3" draggable="true" ondragstart="onDragStar(event)" class="pieza" src="./img_recortadas/r3.png">
+    </section>
+
+    <section class="contenedor_rompecabeza">
+        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="contenedor_item c1"></div>
+        <div ondragover="onDragOver(event)" ondrop="onDrop(event)"   class="contenedor_item c2"></div>
+        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="contenedor_item c3"></div>
+        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="contenedor_item c4"></div>
+        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="contenedor_item c5"></div>
+        <div ondragover="onDragOver(event)" ondrop="onDrop(event)" class="contenedor_item c6"></div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer_parrafo">Rompecabezas utilizando los eventos de Drag and Drop</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
